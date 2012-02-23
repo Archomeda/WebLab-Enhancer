@@ -181,16 +181,26 @@ div.span9 ul.dropdown-menu {
 		{
 			case 82: //R
 				if (ctrlKey && shiftKey) //Ctrl+Shift+R: Run specification test
+				{
 					$("div.span8 input[value='Run Specification Test']").click();
+					return false;
+				}
 				else if (ctrlKey) //Ctrl+R: Run your test
+				{
 					$("div.span8 input[value='Run Your Test']").click();
-				return false;
+					return false;
+				}
 			case 83: //S
 				if (ctrlKey && shiftKey) //Ctrl+Shift+S: Submit
+				{
 					$("div.span8 input[value='Submit']").click();
+					return false;
+				}
 				else if (ctrlKey) //Ctrl+S: Save and compile
+				{
 					$("input#save").click();
-				return false;
+					return false;
+				}
 		}		
 	});
 }) ();
