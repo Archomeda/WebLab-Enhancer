@@ -13,6 +13,13 @@ Dit script zorgt voor een betere werkomgeving in WebLab:
  - Door middel van een aantal keyboard shortcuts wordt het opslaan, compilen en testen een stuk makkelijker (gebaseerd op JW's Chrome-extensie: https://github.com/jw-moonshine/weblab-chrome-extension)
 
 ==========================
+  Installatie
+==========================
+ - Klik op weblab_enhancer.user.js
+ - Klik vervolgens op de knop "Raw" rechtsboven het bestand
+ - Greasemonkey zal het automatisch over moeten nemen (mits geïnstalleerd) en vragen het te installeren
+
+==========================
   Ondersteunde shortcuts
 ==========================
 Er worden dezelfde shortcuts gebruikt als in de Chrome-extensie:
