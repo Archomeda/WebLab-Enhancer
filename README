@@ -1,0 +1,22 @@
+==========================
+  Vooraf
+==========================
+Dit is een userscript gemaakt voor Greasemonkey in Firefox.
+Installeer Greasemonkey eerst alvorens dit script te installeren.
+Er is geen garantie dat dit script werkt in andere browsers.
+
+==========================
+  Beschrijving
+==========================
+Dit script zorgt voor een betere werkomgeving in WebLab:
+ - De code editor wordt uitgerekt tot aan de randen van het scherm, dus je hebt geen last meer van een te kleine editor.
+ - Door middel van een aantal keyboard shortcuts wordt het opslaan, compilen en testen een stuk makkelijker (gebaseerd op JW's Chrome-extensie: https://github.com/jw-moonshine/weblab-chrome-extension)
+
+==========================
+  Ondersteunde shortcuts
+==========================
+Er worden dezelfde shortcuts gebruikt als in de Chrome-extensie:
+ - CTRL + S:			Save & Compile
+ - CTRL + Shift + S:	Submit
+ - CTRL + R:			Run Your Tests
+ - CTRL + Shift + R:	Run Specification Tests
