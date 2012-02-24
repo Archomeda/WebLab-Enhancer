@@ -22,8 +22,8 @@ Dit script zorgt voor een betere werkomgeving in WebLab:
 ==========================
   Ondersteunde shortcuts
 ==========================
-Er worden dezelfde shortcuts gebruikt als in de Chrome-extensie:
- - CTRL + S:			Save & Compile
- - CTRL + Shift + S:	Submit
- - CTRL + R:			Run Your Tests
- - CTRL + Shift + R:	Run Specification Tests
+Er worden bijna dezelfde shortcuts gebruikt als in de Chrome-extensie (Ctrl+R kan niet gebruikt worden omdat deze al gebruikt wordt door de editor zelf, dit zorgt voor problemen als deze ook hier gebruikt wordt):
+ - Ctrl/Alt + S:			Save & Compile
+ - Ctrl/Alt + Shift + S:	Submit
+ - Alt + R:					Run Your Tests
+ - Alt + Shift + R:			Run Specification Tests

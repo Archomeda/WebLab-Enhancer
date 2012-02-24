@@ -2,8 +2,8 @@
 // @name			TI1220 WebLab Enhancer
 // @namespace		TI1220 WebLab Enhancer
 // @description		Stretch the code form to full screen and use key bindings to complete your assignments within less time
-// @version			1.0
-// @date			2012-02-23
+// @version			1.1
+// @date			2012-02-24
 // @author			Dimitri Slappendel
 // @include			http://department.st.ewi.tudelft.nl/weblab/submission/*
 // @include			http://department.st.ewi.tudelft.nl/weblab/assignment/*
@@ -170,7 +170,7 @@ div.span9 ul.dropdown-menu {
 		//alert("WebLab Enhancer couldn't be loaded properly: jQuery is not available.");
 		return;
 	}
-
+	
 	$(document).keydown(function(e)
 	{
 		var ctrlKey = e.ctrlKey || e.metaKey; // Control for Win/Linux and Command for Mac
@@ -180,23 +180,23 @@ div.span9 ul.dropdown-menu {
 		switch(e.keyCode)
 		{
 			case 82: //R
-				if (ctrlKey && shiftKey) //Ctrl+Shift+R: Run specification test
+				if (altKey && shiftKey) //Alt+Shift+R: Run specification test
 				{
 					$("div.span8 input[value='Run Specification Test']").click();
 					return false;
 				}
-				else if (ctrlKey) //Ctrl+R: Run your test
+				else if (altKey) //Alt+R: Run your test
 				{
 					$("div.span8 input[value='Run Your Test']").click();
 					return false;
 				}
 			case 83: //S
-				if (ctrlKey && shiftKey) //Ctrl+Shift+S: Submit
+				if ((ctrlKey || altKey) && shiftKey) //Ctrl+Shift+S / Alt+Shift+S: Submit
 				{
 					$("div.span8 input[value='Submit']").click();
 					return false;
 				}
-				else if (ctrlKey) //Ctrl+S: Save and compile
+				else if (ctrlKey || altKey) //Ctrl+S / Alt+S: Save and compile
 				{
 					$("input#save").click();
 					return false;
