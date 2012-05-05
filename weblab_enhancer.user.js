@@ -2,11 +2,12 @@
 // @name			TI1220 WebLab Enhancer
 // @namespace		TI1220 WebLab Enhancer
 // @description		Stretch the code form to full screen and use key bindings to complete your assignments within less time
-// @version			1.1
-// @date			2012-02-24
+// @version			1.2
+// @date			2012-05-05
 // @author			Dimitri Slappendel
 // @include			http://department.st.ewi.tudelft.nl/weblab/submission/*
 // @include			http://department.st.ewi.tudelft.nl/weblab/assignment/*
+// @exclude			http://department.st.ewi.tudelft.nl/weblab/assignment/*/info
 // ==/UserScript==
 
 
@@ -41,8 +42,15 @@ body > div.container {
     overflow:auto;
 }
 
-div.span9 {
-    /* Progress menu */
+div#maincontainer > div.block > div.block {
+	/* Submission text */
+	position:absolute;
+	top:10px;
+	left:160px;
+}
+
+div.span9, div.span12 {
+    /* Progress menu & overall menu bar */
     float:right !important;
     padding-right:5px !important;
 }
@@ -128,7 +136,7 @@ div.tabs, div.aceEditor {
     left:0;
     top:0;
     right:0;
-    bottom:0px;
+    bottom:-10px;
     width:100% !important;
     height:auto !important;
 }
@@ -145,6 +153,28 @@ div.compilerOutput {
     left:0;
     right:0;
     bottom:0;
+}
+
+div#comments:contains-element(form) {
+	/* Comments (enabled) */
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:-205px;
+}
+
+div#comments {
+	/* Comments */
+	position:absolute;
+	top:100%;
+	left:0;
+	right:0;
+	padding-bottom:5px;
+}
+
+div#comments textarea {
+	/* Comments editor */
+	width:99%;
 }
 
 div.span9 ul.dropdown-menu {
@@ -201,6 +231,6 @@ div.span9 ul.dropdown-menu {
 					$("input#save").click();
 					return false;
 				}
-		}		
+		}
 	});
 }) ();
